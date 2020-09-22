@@ -1,0 +1,20 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #ffffff;
+}
+
+header, .home-hero {
+    background-color: #CCCCCC;
+}
+
+.home-about{
+    background-color: #1F4A7D;
+}
+
+.home-example {
+    background-color: #FED447;
+}
