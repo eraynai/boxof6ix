@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Box of 6ix Website</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
   </head>
   <body>
+    <!--
     <header>
       <img src="IMG/boxof6ix_web.png" alt="box of 6ix logo" class="logo" />
       <nav>
@@ -17,10 +19,10 @@
           <li><a href="#"></a>LogIn|Sign Up</li>
         </ul>
       </nav>
-      <section class="home-hero">
+      <div class="home-hero">
         <h1>Explore Toronto one neighbourhood at a time</h1>
         <a class="button button-accent" href="#">Subscribe</a>
-      </section>
+      </div>
     </header>
     <section class="home-about">
       <div class="home-about-textbox">
@@ -38,28 +40,52 @@
     <section class="home-example">
       <img src="IMG/example.png" alt="example" />
     </section>
-    <section class="home-works">
-      <div class="home-works-text">
-        <h2>How it Works</h2>
-      </div>
-      <div class="home-works-text">
-        <h2 class="number">1</h2>
-        <img src="IMG/refresh.png" alt="refresh" />
-        <h3 class="homeworks-text-subtitle">Subscribe</h3>
-        <p>Explain how subscribe part really works</p>
-      </div>
-      <div class="home-works-text">
-        <h2 class="number">2</h2>
-        <img src="IMG/checkbox.png" alt="checkbox" />
-        <h3 class="homeworks-text-subtitle">Customize</h3>
-        <p>Explain how customize part really works</p>
-      </div>
-      <div class="home-works-text">
-        <h2 class="number">3</h2>
-        <img src="IMG/house.png" alt="house">
-        <h3 class="homeworks-text-subtitle">Get It</h3>
-        <p>Explain how get it part really works</p>
+  -->
+    <section class="home-works-container">
+      <div class="home-works-text-width">
+        <div class="home-works-text-flex">
+          <div class="home-works-text-flex-item">
+            <h2>How it Works</h2>
+          </div>
+          <div class="home-works-text-flex-item">
+            <div class="home-works-text-flex-2">
+              <div class="home-works-text-flex-2-item">
+                <h2 class="big_number">1</h2>
+              </div>
+              <div class="home-works-text-flex-2-item">
+                <img src="IMG/refresh.png" alt="refresh" />
+                <h3 class="homeworks-text-subtitle">Subscribe</h3>
+                <p>Explain how subscribe part really works</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="home-works-text-flex-item">
+            <h2 class="big_number">2</h2>
+            <img src="IMG/checkbox.png" alt="checkbox" />
+            <h3 class="homeworks-text-subtitle">Customize</h3>
+            <p>Explain how customize part really works</p>
+          </div>
+          <div class="home-works-text-flex-item">
+            <h2 class="big_number">3</h2>
+            <img src="IMG/house.png" alt="house" />
+            <h3 class="homeworks-text-subtitle">Get It</h3>
+            <p>Explain how get it part really works</p>
+          </div>
+        </div>
       </div>
     </section>
+    <!--
+    <section class="home-example-2">
+      <img src="IMG/example_2.png" />
+    </section>
+    
+    <footer>
+      <h2>Join Our Mailing List. We're careful about not spamming you.</h2>
+      <form><input placeholder="Your email address" /></form>
+      <a href="#">JOIN NOW</a>
+      <img src="IMG/arrow.png" />
+      <h3>Follow Us on Instagram, Twitter, LinkedIn & Facebook.</h3>
+    </footer>-->
   </body>
 </html>
