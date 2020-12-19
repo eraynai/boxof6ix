@@ -7,7 +7,9 @@
 body {
   margin: 0;
   color: #ffffff;
+  background-color: #cccccc;
   padding: 0;
+  font-family: sans-serif;
 }
 
 h2 {
@@ -16,22 +18,49 @@ h2 {
 }
 
 .big-number {
-    font-size: 7em;
-    line-height: 62px;
+  font-size: 7em;
+  line-height: 62px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
 
-header,
-.home-hero {
-  background-color: #cccccc;
+nav {
+  display: none;
 }
 
 .home-about {
   background-color: #1f4a7d;
+  padding: 2rem;
 }
 
 .home-example {
   background-color: #fed447;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.home-example .circle {
+  position: absolute;
+  right: -70px;
+  top: -30px;
+  z-index: 0;
+}
+
+.home-example .photo {
+  z-index: 1;
+}
+
+.home-example .six {
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+  z-index: 2;
 }
 
 .panels-container {
@@ -46,13 +75,15 @@ header,
 }
 
 .panel {
-  
   padding: 1em;
   display: flex;
   border-top: 2px white solid;
 }
 
-
+.home-hero {
+  padding: 2rem;
+  margin-top: 20rem;
+}
 
 .panel .content {
   margin-left: 40%;
@@ -65,4 +96,62 @@ header,
 footer {
   background-color: #f8f5ed;
   color: #0f4885;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-button {
+  background-image: url("../IMG/subscribe-border.png");
+  width: 126px;
+  height: 33px;
+  display: block;
+  text-align: center;
+  padding: 6px;
+}
+
+.mailing-list input {
+  margin-bottom: 1rem;
+}
+
+.mailing-list {
+  margin-top: 1rem;
+}
+
+.arrow-button {
+  display: block;
+}
+
+.arrow-button img {
+  width: 15px;
+  margin-left: 0.5rem;
+}
+
+.logo {
+  width: 150px;
+}
+
+footer .logo {
+  vertical-align: -0.7rem;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.box-circle {
+  position: absolute;
+  z-index: 0;
+  right: -7rem;
+  bottom: 1rem;
+}
+
+.tag-line {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.logo-tagline {
+  margin-top: 1rem;
 }
