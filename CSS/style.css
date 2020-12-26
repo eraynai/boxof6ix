@@ -1,15 +1,19 @@
+@import '../FONTS/fontie-package/Gilroy SemiBold.css';
+@import '../FONTS/fontie-package/Gilroy.css';
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   color: #ffffff;
-  background-color: #cccccc;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Gilroy';
+  background: r;
 }
 
 h2 {
@@ -82,8 +86,12 @@ nav {
 
 .home-hero {
   padding: 2rem;
-  margin-top: 20rem;
+  padding-top: 20rem;
+  background-color:grey;
+  border: 2;
 }
+
+.home-hero {}
 
 .panel .content {
   margin-left: 40%;
@@ -131,7 +139,7 @@ footer {
   width: 150px;
 }
 
-footer .logo {
+.logo-tagline .logo{
   vertical-align: -0.7rem;
 }
 
@@ -152,6 +160,39 @@ footer .logo {
   margin-left: 1rem;
 }
 
-.logo-tagline {
-  margin-top: 1rem;
+
+
+/*---- Media Queries ----*/
+
+
+@media (min-width: 700px){
+  body {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  header #menu-icon {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    color: black;
+  }
+
+  header .tag-line {
+    color: grey;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+
+  nav li {
+    margin-right: 1rem;
+  }
+  
 }
