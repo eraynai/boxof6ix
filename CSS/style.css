@@ -93,14 +93,24 @@ nav, .access-links {
 }
 
 .home-hero {
-  padding: 2rem;
+  padding-bottom: 3rem;
   padding-top: 20rem;
-  background-color:grey;
+  /* background-color: grey; */
   border: 2;
-  border: ;
+  background-image: url(../IMG/toronto_neighborhood_v2.jpg);
+  background-size: cover;
+  /* justify-content: flex-end; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-position: right;
 }
 
-.home-hero {}
+
+
+.home-hero img{
+  width: 100%;
+}
 
 .panel .content {
   margin-left: 40%;
@@ -125,6 +135,7 @@ footer {
   display: block;
   text-align: center;
   padding: 6px;
+  color: white;
 }
 
 .mailing-list input {
@@ -241,5 +252,52 @@ footer {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+
+  .home-example {
+    display: none;
+  }
+
+  .home-about {
+    background-image: url("../IMG/homepage_background.png");
+    background-size: cover;
+    padding: 12rem;
+    position: relative;
+    text-align: center;
+    background-position: right;
+  }
   
+  .about-content {
+    background: #1F4A7D;
+    top: 0px;
+    left: 0px;
+    padding: 4rem;
+    /* padding-bottom: 15rem; */
+    width: 46%;
+    /* height: 49%; */
+    /* text-align: center; */
+    position: absolute;
+    text-align: left;
+  }
+
+  .about-content h2 {
+    font-size: 2em;
+    max-width: 27rem;
+  }
+
+  .about-content p {
+    font-size: 1.4em;
+    /* width: 71%; */
+    margin-left: 13%;
+    max-width: 35rem;
+  }
+
+  .about-content a {
+    margin-left: 13%;
+    color: white;
+  }
+
+  .call-to-action {
+    margin-right: 28%;
+  }
+
 }
