@@ -217,6 +217,9 @@ footer {
   display: block;
 }
 
+.about-image {
+  display: none;
+}
 
 
 /*---- Media Queries ----*/
@@ -270,7 +273,7 @@ footer {
     background: #1F4A7D;
     top: 0px;
     left: 0px;
-    padding: 4rem;
+    padding: 3%;
     /* padding-bottom: 15rem; */
     width: 46%;
     /* height: 49%; */
@@ -299,5 +302,49 @@ footer {
   .call-to-action {
     margin-right: 28%;
   }
+
+  .panels-container {
+    flex-direction: row;
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+
+  .panel:first-child {
+    padding-left: 0;
+    justify-content: flex-end;
+}
+
+.panel {
+  flex-direction: column-reverse;
+  border-right: 2px white solid;
+  justify-content: flex-end;
+  padding-right: 8%;
+  /* width: 61%; */
+  flex: 1;
+  justify-content: space-between;
+}
+
+.big-number {
+  margin: -0.7em;
+}
+
+
+.first-number {
+    margin: -0.5em;
+}
+
+.about-image {
+  width: 54%;
+  margin-left: 32%;
+  display: block;
+}
+
+.panel .content {
+    margin-left: 0;
+}
+
+.panel:last-child {
+  border-right: none;
+}
 
 }
